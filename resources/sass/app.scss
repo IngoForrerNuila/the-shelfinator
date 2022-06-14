@@ -1,32 +1,127 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400&family=Rowdies:wght@300;400;700&display=swap');
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
-
-
- 
-main{
+.main {
     font: 100% $font-stack;
     color: $primary-font-color;
     background-color: $background-color;
     height: 100vh;
 }
-
-
-.fullscreen-bg{
+.fullscreen-bg {
     display: flex;
     align-content: center;
     justify-content: center;
-    max-height:100vh;
+    max-height: 100vh;
     z-index: 2;
 }
-
-.logo-welcome{
-        z-index: 1;    
+//WELCOME WELCOME WELCOME WELCOME WELCOME WELCOME
+body {
+    margin: 0%;
+    background: $background-color;
+}
+.logo-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    max-width: 100%;
+    padding: 3rem;
+}
+.fullscreen-video {
+    position: fixed;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -10;
+}
+//INDEX INDEX INDEX INDEX INDEX INDEX INDEX INDEX
+.ncolor{
+    background-color: $navcolor;
+}
+.estructura{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.h1_main{
+    color:$primary-font-color;
+    font-family:$titlesfont;
+    text-transform: uppercase;	
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+}
+.catalogo{
+    margin: 1rem;
+    display: inline-block;
+    
+}
+.img_catalogo{
+    max-width: fit-content;
+    max-height: 28vh;
+}
+.txt_catalogo{
+    color: $primary-font-color;
+}
+.star{
+    margin: 0.2rem;
+    height: 0.8rem;
+    width: 0.8rem;
 }
 
+// GENRE BUTTONS 
+
+.genre-action{
+    background-color: $genreActionColor;
+    border-radius: $genreRadius;
+    text-align: $genreTextAlign;
+    font-family:$titlesfont;
+    color: $primary-font-color;
+    text-transform: $genreTextTransform;
+}
+.genre-horror{
+    background-color: $genreHorrorColor;
+    border-radius: $genreRadius;
+    text-align: $genreTextAlign;
+    font-family:$titlesfont;
+    color: $primary-font-color;
+    text-transform: $genreTextTransform;
+}
+.genre-adventure{
+    background-color: $genreAdventureColor;
+    border-radius: $genreRadius;
+    text-align: $genreTextAlign;
+    font-family:$titlesfont;
+    color: $primary-font-color;
+    text-transform: $genreTextTransform;
+}
+.genre-comedy{
+    background-color: $genreAdventureColor;
+    border-radius: $genreRadius;
+    text-align: $genreTextAlign;
+    font-family:$titlesfont;
+    color: $primary-font-color;
+    text-transform: $genreTextTransform;
+}
+.genre-scifi{
+    background-color: $genreAdventureColor;
+    border-radius: $genreRadius;
+    text-align: $genreTextAlign;
+    font-family:$titlesfont;
+    color: $primary-font-color;
+    text-transform: $genreTextTransform;
+}

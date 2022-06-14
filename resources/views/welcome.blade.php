@@ -12,19 +12,16 @@
     
 </head>
 
-
-
-
-    <a href='/master'><img class="logo-welcome" src="{{ asset('img/logo.png') }}"></a>
-    <div class="fullscreen-bg">
-
-        
-        <video loop muted autoplay>
-            <source src="{{ asset('img/stars.mp4') }}" type="video/mp4">
-        </video>
+<a href='/index'>
+<div class="logo-container">
+        <img class="logo" src="{{ asset('img/logo.png') }}">
     </div>
+</a>
 
-    
+    <video class="fullscreen-video" muted loop autoplay>
+        <source src="{{ asset('img/stars.mp4') }}">
+    </video>
+   
     
 </body>
 
