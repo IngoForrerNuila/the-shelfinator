@@ -18,5 +18,10 @@ Route::get('/', function () {
 });
 
 Route::get('/index', function () {
-    return view('master');
+    return view('home');
 });
+
+Route::get('/details/{id}', function () {
+    return view('details');
+});
+

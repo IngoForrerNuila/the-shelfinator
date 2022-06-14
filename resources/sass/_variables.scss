@@ -2,12 +2,15 @@
 // FONTS
 $font-stack: Helvetica, sans-serif;
 $titlesfont:'Rowdies', cursive;
-
+$textCatalogFontSize:5vw;
 // Primary Colors
 $primary-font-color:white;
 $background-color: rgb(0, 0, 0);
 
-// GENRE COLORS
+// GENRE 
+$genreTextSize:4vw;
+
+//COLORS
 $genreActionColor:#047CAE;
 $genreHorrorColor:#F01A24;
 $genreAdventureColor:#F57C21;
@@ -19,6 +22,17 @@ $genreRomanticColor:#FFD976;
 $genreRadius:25px;
 $genreTextAlign:center;
 $genreTextTransform:uppercase;
+//GENRE SIZING
+$genrePaddingLeft:0.5rem;
+$genrePaddingRight:0.5rem;
+// $genreWidth:30vw; Esta clase la modificamos para que el contenedor se ajuste al texto responsive
+// $genreMargin:1rem; Igual que arriba
 
 // Nav
 $navcolor:#F5C518;
+
+//DETAILS
+//TITLE
+$detailTitle:10vw;
+$detailTitleAlign:center;
+    

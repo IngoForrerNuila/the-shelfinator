@@ -1,19 +1,4 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>The Shelfinator</title>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-    {{-- ICONS --}}
-    <script src="https://use.fontawesome.com/2fd392e433.js"></script>
-    {{-- Link with sass --}}
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
+@extends('layout/master')
 
 <body>
     @include('nav')
@@ -29,14 +14,6 @@
             <img class="star" src="{{ asset('img/star.png') }}">
             <h2 class="txt_catalogo">8.6<br> RAMBO <br>First Blood </h2>
             <p class="genre-action">genero</p>
-            {{-- Here it also should call info from the database --}}
-        </div>
-
-        <div class="catalogo">
-            <img class="img_catalogo" src="{{ asset('img/rambo.jpg') }}">
-            <br>
-            <img class="star" src="{{ asset('img/star.png') }}">
-            <h2 class="txt_catalogo">8.6<br> RAMBO <br>First Blood </h2>
             <p class="genre-action">genero</p>
             {{-- Here it also should call info from the database --}}
         </div>
@@ -46,7 +23,17 @@
             <br>
             <img class="star" src="{{ asset('img/star.png') }}">
             <h2 class="txt_catalogo">8.6<br> RAMBO <br>First Blood </h2>
-            <p class="genre-action">genero</p>
+            <p class="genre-horror">horror</p>
+            <p class="genre-action">action</p>
+            {{-- Here it also should call info from the database --}}
+        </div>
+
+        <div class="catalogo">
+            <img class="img_catalogo" src="{{ asset('img/rambo.jpg') }}">
+            <br>
+            <img class="star" src="{{ asset('img/star.png') }}">
+            <h2 class="txt_catalogo">8.6<br> RAMBO <br>First Blood </h2>
+            <p class="genre-adventure">adventurelele</p>
             {{-- Here it also should call info from the database --}}
         </div>
 
