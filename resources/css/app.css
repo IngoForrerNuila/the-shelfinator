@@ -1,0 +1,63 @@
+body {
+margin: 0%;
+background: black;
+
+}
+
+.titulo{
+color: white;
+font-family: monospace;
+font-size: 30px;
+text-align: center;
+font-weight: bolder;
+
+}
+
+.logo-container{
+    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /*IMPORTANTE*/
+   
+
+}
+
+.child-div{
+      
+
+}
+
+
+.logo{
+   max-width: 100%;
+
+}
+
+
+.fullscreen-video {
+    position: fixed;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -10;
+}
+
+.bg-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: -9;
+}
