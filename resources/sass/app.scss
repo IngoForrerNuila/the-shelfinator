@@ -1,0 +1,32 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+
+ 
+main{
+    font: 100% $font-stack;
+    color: $primary-font-color;
+    background-color: $background-color;
+    height: 100vh;
+}
+
+
+.fullscreen-bg{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    max-height:100vh;
+    z-index: 2;
+}
+
+.logo-welcome{
+        z-index: 1;    
+}
+
