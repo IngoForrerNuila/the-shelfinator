@@ -12,7 +12,7 @@
     
 </head>
 
-<body>
+
 
 
     <a href='/master'><img class="logo-welcome" src="{{ asset('img/logo.png') }}"></a>
