@@ -10363,6 +10363,12 @@ body {
   width: 0.8rem;
 }
 
+.boxFeaturing {
+  margin: 0.5rem;
+  display: flex;
+  align-items: baseline;
+}
+
 .genre-action, .genre-scifi, .genre-comedy, .genre-adventure, .genre-horror {
   background-color: #047CAE;
   border-radius: 25px;
@@ -10427,6 +10433,17 @@ body {
   padding: 0.5rem;
 }
 
+
+@media screen and (min-width: 992px) {
+  body {
+    background-color: blue;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 991px) {
+  body {
+    background-color: olive;
+  }
+=======
 .description_title_form {
   color: #F5C518;
   text-align: center;
@@ -10445,4 +10462,5 @@ ul {
 li::before {
   content: "•";
   color: #F5C518; /* or whatever color you prefer */
+
 }
