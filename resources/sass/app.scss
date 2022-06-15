@@ -91,6 +91,12 @@ body {
     width: 0.8rem;
 }
 
+.boxFeaturing{
+    margin: 0.5rem;
+    display: flex;
+    align-items: baseline;
+}
+
 // GENRE BUTTONS 
 
 .genre-action{
@@ -152,3 +158,4 @@ body {
     text-align: center;
     padding: 0.5rem;
 }
+

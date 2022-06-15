@@ -10363,6 +10363,12 @@ body {
   width: 0.8rem;
 }
 
+.boxFeaturing {
+  margin: 0.5rem;
+  display: flex;
+  align-items: baseline;
+}
+
 .genre-action, .genre-scifi, .genre-comedy, .genre-adventure, .genre-horror {
   background-color: #047CAE;
   border-radius: 25px;

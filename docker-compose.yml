@@ -44,9 +44,16 @@ services:
             test: ["CMD", "mysqladmin", "ping", "-p${DB_PASSWORD}"]
             retries: 3
             timeout: 5s
+
+# ACA PEGO
+
+
+# HASTA ACA
+
 networks:
     sail:
         driver: bridge
 volumes:
     sail-mysql:
         driver: local
+
