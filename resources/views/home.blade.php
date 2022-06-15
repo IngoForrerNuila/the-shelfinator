@@ -13,8 +13,8 @@
             <br>
             <img class="star" src="{{ asset('img/star.png') }}">
             <h2 class="txt_catalogo">8.6<br> RAMBO <br>First Blood </h2>
-            <p class="genre-action">genero</p>
-            <p class="genre-action">genero</p>
+            <p class="genre-action">action</p>
+            <p class="genre-comedy">comedy</p>
             {{-- Here it also should call info from the database --}}
         </div>
 
@@ -33,7 +33,7 @@
             <br>
             <img class="star" src="{{ asset('img/star.png') }}">
             <h2 class="txt_catalogo">8.6<br> RAMBO <br>First Blood </h2>
-            <p class="genre-adventure">adventurelele</p>
+            <p class="genre-adventure">adventure</p>
             {{-- Here it also should call info from the database --}}
         </div>
 

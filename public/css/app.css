@@ -10352,7 +10352,7 @@ body {
   max-height: 28vh;
 }
 
-.txt_catalogo {
+.txt_catalogo, .description_details {
   color: white;
   font-size: 5vw;
 }
@@ -10363,13 +10363,14 @@ body {
   width: 0.8rem;
 }
 
-.genre-action {
+.genre-action, .genre-scifi, .genre-comedy, .genre-adventure, .genre-horror {
   background-color: #047CAE;
   border-radius: 25px;
   text-align: center;
   font-family: "Rowdies", cursive;
   color: white;
   text-transform: uppercase;
+  max-width: 30vw;
   font-size: 4vw;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -10377,50 +10378,18 @@ body {
 
 .genre-horror {
   background-color: #F01A24;
-  border-radius: 25px;
-  text-align: center;
-  font-family: "Rowdies", cursive;
-  color: white;
-  text-transform: uppercase;
-  font-size: 4vw;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .genre-adventure {
   background-color: #F57C21;
-  border-radius: 25px;
-  text-align: center;
-  font-family: "Rowdies", cursive;
-  color: white;
-  text-transform: uppercase;
-  font-size: 4vw;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .genre-comedy {
   background-color: #F57C21;
-  border-radius: 25px;
-  text-align: center;
-  font-family: "Rowdies", cursive;
-  color: white;
-  text-transform: uppercase;
-  font-size: 4vw;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .genre-scifi {
   background-color: #F57C21;
-  border-radius: 25px;
-  text-align: center;
-  font-family: "Rowdies", cursive;
-  color: white;
-  text-transform: uppercase;
-  font-size: 4vw;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .details_section {
@@ -10439,6 +10408,17 @@ body {
 }
 
 .img_details {
-  max-width: 100vw;
+  max-width: 90vw;
   padding: 0.8rem;
+}
+
+.catalogo_details {
+  margin: 1rem;
+  display: flex;
+  align-items: baseline;
+}
+
+.description_details {
+  text-align: center;
+  padding: 0.5rem;
 }

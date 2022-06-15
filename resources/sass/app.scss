@@ -100,68 +100,30 @@ body {
     font-family:$titlesfont;
     color: $primary-font-color;
     text-transform: $genreTextTransform;
-    // max-width: $genreWidth;
-    // margin: $genreMargin;
+    max-width: $genreWidth;
     font-size: $genreTextSize;
     padding-left: $genrePaddingLeft;
     padding-right: $genrePaddingRight;
 }
 .genre-horror{
+    @extend .genre-action;
     background-color: $genreHorrorColor;
-    border-radius: $genreRadius;
-    text-align: $genreTextAlign;
-    font-family:$titlesfont;
-    color: $primary-font-color;
-    text-transform: $genreTextTransform;
-    // max-width: $genreWidth;
-    // margin: $genreMargin;
-    font-size: $genreTextSize;
-    padding-left: $genrePaddingLeft;
-    padding-right: $genrePaddingRight;
-
 }
-.genre-adventure{
-    background-color: $genreAdventureColor;
-    border-radius: $genreRadius;
-    text-align: $genreTextAlign;
-    font-family:$titlesfont;
-    color: $primary-font-color;
-    text-transform: $genreTextTransform;
-    // max-width: $genreWidth;
-    // margin: $genreMargin;
-    font-size: $genreTextSize;
-    padding-left: $genrePaddingLeft;
-    padding-right: $genrePaddingRight;
 
+.genre-adventure{
+    @extend .genre-action;
+    background-color: $genreAdventureColor;
 }
 .genre-comedy{
+    @extend .genre-action;
     background-color: $genreAdventureColor;
-    border-radius: $genreRadius;
-    text-align: $genreTextAlign;
-    font-family:$titlesfont;
-    color: $primary-font-color;
-    text-transform: $genreTextTransform;
-    // max-width: $genreWidth;
-    // margin: $genreMargin;
-    font-size: $genreTextSize;
-    padding-left: $genrePaddingLeft;
-    padding-right: $genrePaddingRight;
-
 }
 .genre-scifi{
+    @extend .genre-action;
     background-color: $genreAdventureColor;
-    border-radius: $genreRadius;
-    text-align: $genreTextAlign;
-    font-family:$titlesfont;
-    color: $primary-font-color;
-    text-transform: $genreTextTransform;
-    // max-width: $genreWidth;
-    // margin: $genreMargin;
-    font-size: $genreTextSize;
-    padding-left: $genrePaddingLeft;
-    padding-right: $genrePaddingRight;
-
 }
+
+
 //DETAILS DETAILS DETAILS 
 .details_section{
     display: flex;
@@ -177,6 +139,16 @@ body {
     text-align: $detailTitleAlign;
 }
 .img_details{
-    max-width: 100vw;
+    max-width: 90vw;
     padding: 0.8rem;
+}
+.catalogo_details{
+    margin: 1rem;
+    display: flex;
+    align-items: baseline;
+}
+.description_details{
+    @extend .txt_catalogo;
+    text-align: center;
+    padding: 0.5rem;
 }

@@ -18,14 +18,18 @@ $genreComedyColor:#04AE29;
 $genreSciFiColor:#B31F8F;
 $genreKidsColor:#FFA4D5;
 $genreRomanticColor:#FFD976;
+
 //GENRE FORMS
 $genreRadius:25px;
 $genreTextAlign:center;
 $genreTextTransform:uppercase;
+
 //GENRE SIZING
 $genrePaddingLeft:0.5rem;
 $genrePaddingRight:0.5rem;
-// $genreWidth:30vw; Esta clase la modificamos para que el contenedor se ajuste al texto responsive
+$genreWidth:30vw; 
+
+//Esta clase la modificamos para que el contenedor se ajuste al texto responsive
 // $genreMargin:1rem; Igual que arriba
 
 // Nav
