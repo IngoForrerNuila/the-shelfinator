@@ -159,3 +159,17 @@ body {
     padding: 0.5rem;
 }
 
+// 
+
+  /* On screens that are 992px wide or less, the background color is blue */
+  @media screen and (min-width: 992px) {
+    body {
+      background-color: blue;
+        }
+  }
+
+  @media screen and (min-width: 600px) and (max-width:991px){
+    body {
+      background-color: olive;
+    }
+}
