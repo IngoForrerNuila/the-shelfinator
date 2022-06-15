@@ -10352,7 +10352,7 @@ body {
   max-height: 28vh;
 }
 
-.txt_catalogo, .description_details {
+.txt_catalogo, .ul_comments, .description_details {
   color: white;
   font-size: 5vw;
 }
@@ -10398,6 +10398,10 @@ body {
   background-color: #F57C21;
 }
 
+.sbutton {
+  margin-top: 0.5rem;
+}
+
 .details_section {
   display: flex;
   flex-wrap: wrap;
@@ -10429,7 +10433,7 @@ body {
   padding: 0.5rem;
 }
 
-/* On screens that are 992px wide or less, the background color is blue */
+
 @media screen and (min-width: 992px) {
   body {
     background-color: blue;
@@ -10439,4 +10443,24 @@ body {
   body {
     background-color: olive;
   }
+=======
+.description_title_form {
+  color: #F5C518;
+  text-align: center;
+}
+
+.ul_comments {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+}
+
+li::before {
+  content: "•";
+  color: #F5C518; /* or whatever color you prefer */
+
 }
