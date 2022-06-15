@@ -91,7 +91,7 @@ body {
     width: 0.8rem;
 }
 
-// GENRE BUTTONS 
+// GENRE & SUBTMIT BUTTONS 
 
 .genre-action{
     background-color: $genreActionColor;
@@ -122,7 +122,9 @@ body {
     @extend .genre-action;
     background-color: $genreAdventureColor;
 }
-
+.sbutton{
+    margin-top: 0.5rem;
+}
 
 //DETAILS DETAILS DETAILS 
 .details_section{
@@ -152,3 +154,22 @@ body {
     text-align: center;
     padding: 0.5rem;
 }
+.description_title_form{
+    color: $navcolor;
+    text-align: center;
+}
+.ul_comments{
+    @extend .txt_catalogo;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: left;
+}
+
+ul{
+    list-style: none;
+}
+
+li::before {
+    content: "•";
+    color:$navcolor; /* or whatever color you prefer */
+  }
