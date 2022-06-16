@@ -14,7 +14,8 @@
         is a small description of the movie and I am pretty sure you are going to enjoy it!</h2>
     <h1 class="description_title_form">LEAVE YOUR THOUGHT</h1>
 
-    <form>
+    <form action="#" method="post">
+        @csrf
         <div class="form-group">
             <label for="exampleFormControlInput1">Email address</label>
             <input type="text" class="form-control" id="exampleFormControlInput1"
@@ -27,7 +28,7 @@
                 placeholder="Here you can leaver your amazing thoughts"></textarea>
         </div>
 
-        <button type="button" class="btn btn-warning sbutton">Submit</button>
+        <button type="submit" class="btn btn-warning sbutton">Submit</button>
     </form>
 
 
