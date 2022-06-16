@@ -10433,7 +10433,6 @@ body {
   padding: 0.5rem;
 }
 
-
 @media screen and (min-width: 992px) {
   body {
     background-color: blue;
@@ -10443,7 +10442,7 @@ body {
   body {
     background-color: olive;
   }
-=======
+}
 .description_title_form {
   color: #F5C518;
   text-align: center;
@@ -10462,5 +10461,4 @@ ul {
 li::before {
   content: "•";
   color: #F5C518; /* or whatever color you prefer */
-
 }
