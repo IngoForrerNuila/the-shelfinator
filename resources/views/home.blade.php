@@ -62,63 +62,26 @@
 
     {{-- @endsection --}}
 
-    <h1 class="h1_main">best action movies</h1>
+    <h1 class="h1_main">best movies</h1>
     {{-- best (GENRE) movies should be calling from the database --}}
     <section class="estructura">
 
         {{-- PELICULAS --}}
+        @foreach ($messages as $message)
         <div class="catalogo">
-            <img class="img_catalogo" src="{{ asset('img/rambo.jpg') }}">
+            <img class="img_catalogo" src="{{ $message->moviePic }}">
             <br>
             <img class="star" src="{{ asset('img/star.png') }}">
-            <h2 class="txt_catalogo">8.6<br> RAMBO <br>First Blood </h2>
-            <p class="genre-action">action</p>
-            <p class="genre-comedy">comedy</p>
+            <h2 class="txt_catalogo">{{ $message->movieScore }}<br> {{ $message->movieTitle }}<br></h2>
+            <p class="genre-action">{{ $message->movieGenre }}</p>
+            
             {{-- Here it also should call info from the database --}}
         </div>
 
-        <div class="catalogo">
-            <img class="img_catalogo" src="{{ asset('img/rambo.jpg') }}">
-            <br>
-            <img class="star" src="{{ asset('img/star.png') }}">
-            <h2 class="txt_catalogo">8.6<br> RAMBO <br>First Blood </h2>
-            <p class="genre-horror">horror</p>
-            <p class="genre-action">action</p>
-            {{-- Here it also should call info from the database --}}
-        </div>
+        
+        @endforeach
 
-        <div class="catalogo">
-            <img class="img_catalogo" src="{{ asset('img/rambo.jpg') }}">
-            <br>
-            <img class="star" src="{{ asset('img/star.png') }}">
-            <h2 class="txt_catalogo">8.6<br> RAMBO <br>First Blood </h2>
-            <p class="genre-adventure">adventure</p>
-            {{-- Here it also should call info from the database --}}
-        </div>
-
-        <div class="catalogo">
-            <img class="img_catalogo" src="{{ asset('img/rambo.jpg') }}">
-            <br>
-            <img class="star" src="{{ asset('img/star.png') }}">
-            <h2 class="txt_catalogo">8.6<br> RAMBO <br>First Blood </h2>
-            <p class="genre-action">genero</p>
-            {{-- Here it also should call info from the database --}}
-        </div>
-
-        <div class="catalogo">
-            <img class="img_catalogo" src="{{ asset('img/rambo.jpg') }}">
-            <br>
-            <img class="star" src="{{ asset('img/star.png') }}">
-            <h2 class="txt_catalogo">8.6<br> RAMBO <br>First Blood </h2>
-            <p class="genre-action">genero</p>
-            {{-- Here it also should call info from the database --}}
-        </div>
 
 
     </section>
-
-
-
 </body>
-
-</html>
