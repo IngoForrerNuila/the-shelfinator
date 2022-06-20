@@ -29,17 +29,17 @@ Route::get('/details/{id}', function () {
     return view('details');
 });
 
-Route::post('/details/{id}/create', [MessageController::class, 'create'])->name('create');
+// Route::post('/details/{id}/create', [MessageController::class, 'create'])->name('create');
 
 
-Route::get('/message/{id}', [MessageController::class, 'editData']);
+// Route::get('/message/{id}', [MessageController::class, 'editData']);
 
-                    /////////////////////////
+//                     /////////////////////////
 
-Route::delete('/message/{id}', [MessageController::class, 'delete']);
+// Route::delete('/message/{id}', [MessageController::class, 'delete']);
 
 
-// Route::post('/edit', [MessageController::class, 'update']);
+// // Route::post('/edit', [MessageController::class, 'update']);
 
-Route::post('/update/{id}', [MessageController::class, 'update']);
+// Route::post('/update/{id}', [MessageController::class, 'update']);
 

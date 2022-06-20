@@ -69,7 +69,7 @@
         {{-- PELICULAS --}}
         @foreach ($messages as $message)
         <div class="catalogo">
-            <img class="img_catalogo" src="{{ $message->moviePic }}">
+            <img class="img_catalogo" src="{{ asset('img/movies/'.'$message->moviePic') }}">
             <br>
             <img class="star" src="{{ asset('img/star.png') }}">
             <h2 class="txt_catalogo">{{ $message->movieScore }}<br> {{ $message->movieTitle }}<br></h2>

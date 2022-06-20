@@ -14,7 +14,9 @@
         is a small description of the movie and I am pretty sure you are going to enjoy it!</h2>
     <h1 class="description_title_form">LEAVE YOUR THOUGHT</h1>
 
-    <form action="{{ route('create') }}" method="post">
+
+    
+    <form action="" method="post">
         @csrf
         <div class="form-group">
             <label for="exampleFormControlInput1">Email address</label>
