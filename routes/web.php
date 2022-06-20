@@ -24,10 +24,12 @@ Route::get('/', function () {
 
 Route::get('/index', [MessageController::class, 'showAll']);
 
+Route::get('/details/{id}', [MessageController::class, 'movieDetails']);
 
-Route::get('/details/{id}', function () {
-    return view('details');
-});
+
+// Route::get('/details/{id}', function () {
+//     return view('details');
+// });
 
 // Route::post('/details/{id}/create', [MessageController::class, 'create'])->name('create');
 

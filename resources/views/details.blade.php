@@ -1,30 +1,38 @@
 @extends('layout/master')
 @include('nav')
 
+
+{{-- HERE SHOULD BE ANOTHER WAY TO GENERATE TE VARIABLES --}}
+@foreach ($messages as $message) @endforeach
+
+
+
 <section class="details_section">
-    <h1 class="h1_details">RAMBO</h1>
-    <img class="img_details" src="{{ asset('img/robocop2.jpg') }}">
+    <h1 class="h1_details">{{ $message->movieTitle }}</h1>
+    {{-- <img class="img_details" src="{{ asset('img/robocop2.jpg') }}"> --}}
+    <img class="img_details" src="data:image/jpg;base64,{{ chunk_split(base64_encode($message->moviePic)) }}">
     <div class="catalogo_details">
-        <p class="genre-action">action</p>
+        {{-- <p class="genre-action">action</p> --}}
+        <p class="genre-{{ $message->movieGenre }}">{{ $message->movieGenre }}</p>
         <img class="star" src="{{ asset('img/star.png') }}">
-        <p class="txt_catalogo">8.5</p>
+        <p class="txt_catalogo">{{ $message->movieScore }}</p>
+        
         {{-- Here it also should call info from the database --}}
     </div>
-    <h2 class="description_details"> A rebel alien that is not behaving, and Arnold is going to teach him a leason. This
-        is a small description of the movie and I am pretty sure you are going to enjoy it!</h2>
+    <h2 class="description_details"> {{ $message->movieDescription }}</h2>
     <h1 class="description_title_form">LEAVE YOUR THOUGHT</h1>
-
+    
 
     
     <form action="" method="post">
         @csrf
         <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
+            <label for="exampleFormControlInput1" class="text-white">Name | A.K.A</label>
             <input type="text" class="form-control" id="exampleFormControlInput1" name="titleMessage" placeholder="Please enter your name">
         </div>
 
         <div class="form-group">
-            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <label for="exampleFormControlTextarea1" class="text-white">Message</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="contentMessage"
                 placeholder="Here you can leaver your amazing thoughts"></textarea>
         </div>
@@ -39,11 +47,14 @@
 
 </section>
 <h1 class="description_title_form">THOUGHTS</h1>
-
+@if ($message->titleMessage) >= 1)
 <section class="">
     <ul class="ul_comments">
-        <li>Pedro</li>
-        <li>This is my thought. I personally do not think this is a good movie, however I do really like how Predator
-            look like ;-) he is so sexy </li>
+        <li>{{ $message->titleMessage }}</li>
+        <li>{{ $message->contentMessage }} </li>
     </ul>
+    @else
+        <h1 class="description_title_form text-info">I don't have any nice messages to show you yet ♥</h1>
+       
+    @endif
 </section>

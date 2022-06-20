@@ -14,6 +14,13 @@ class MessageController extends Controller
 
         return view('home', ['messages' => $messages]);
     }
+
+    public function movieDetails()
+    {
+        $messages = Message::all()->sortByDesc('created_at');
+
+        return view('details', ['messages' => $messages]);
+    }
 }
     //  
 //     public function create(Request $request)

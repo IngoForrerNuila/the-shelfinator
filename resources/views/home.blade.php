@@ -68,16 +68,24 @@
 
         {{-- PELICULAS --}}
         @foreach ($messages as $message)
+           <pre >{{var_dump($message)}}</pre>
+
         <div class="catalogo">
-            <img class="img_catalogo" src="{{ asset('img/movies/'.'$message->moviePic') }}">
+            {{-- <img class="img_catalogo" src="{{ asset('img/movies/'.'$message->moviePic') }}"> --}}
+            <a href="/details/{{ $message->id }}">
+            <img class="img_catalogo" src="data:image/jpg;base64,{{ chunk_split(base64_encode($message->moviePic)) }}">
+          </a>
             <br>
+            
             <img class="star" src="{{ asset('img/star.png') }}">
-            <h2 class="txt_catalogo">{{ $message->movieScore }}<br> {{ $message->movieTitle }}<br></h2>
-            <p class="genre-action">{{ $message->movieGenre }}</p>
+            <h2 class="txt_catalogo">{{ $message->movieScore }}</h2>
+          
+            <h2 class="txt_catalogo">{{ $message->movieTitle }}</h2>
+            <p class="genre-{{ $message->movieGenre }}">{{ $message->movieGenre }}</p>
             
             {{-- Here it also should call info from the database --}}
         </div>
-
+        
         
         @endforeach
 
