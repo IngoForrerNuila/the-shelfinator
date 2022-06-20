@@ -26,12 +26,20 @@ Route::get('/index', [MessageController::class, 'showAll']);
 
 Route::get('/details/{id}', [MessageController::class, 'movieDetails']);
 
+// ESTO ESTOY AGREGADO AHORA 
+// Route::post('/create', [MessageController::class, 'create']);
+
+
+
+
+
+// Route::post('/details/{id}/create', [MessageController::class, 'create'])->name('create');
 
 // Route::get('/details/{id}', function () {
 //     return view('details');
 // });
 
-// Route::post('/details/{id}/create', [MessageController::class, 'create'])->name('create');
+
 
 
 // Route::get('/message/{id}', [MessageController::class, 'editData']);

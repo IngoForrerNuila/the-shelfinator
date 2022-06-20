@@ -3,23 +3,29 @@
 
 
 {{-- HERE SHOULD BE ANOTHER WAY TO GENERATE TE VARIABLES --}}
-@foreach ($messages as $message) @endforeach
+{{-- @foreach ($messages as $message) @endforeach --}}
+
 
 
 
 <section class="details_section">
-    <h1 class="h1_details">{{ $message->movieTitle }}</h1>
+    <h1 class="h1_details">{{ $movieObject->movieTitle }}</h1> <br>
+
+    {{-- THIS IS A TEST TO CHECK IF THE ID IS CORRECT AND WHY DOESNT BRING THE PROPER INFO FROM THE URL ID  --}}
+    <h1 class="h1_details">{{ $movieObject->id }}</h1>
+
+
     {{-- <img class="img_details" src="{{ asset('img/robocop2.jpg') }}"> --}}
-    <img class="img_details" src="data:image/jpg;base64,{{ chunk_split(base64_encode($message->moviePic)) }}">
+    <img class="img_details" src="data:image/jpg;base64,{{ chunk_split(base64_encode($movieObject->moviePic)) }}">
     <div class="catalogo_details">
         {{-- <p class="genre-action">action</p> --}}
-        <p class="genre-{{ $message->movieGenre }}">{{ $message->movieGenre }}</p>
+        <p class="genre-{{ $movieObject->movieGenre }}">{{ $movieObject->movieGenre }}</p>
         <img class="star" src="{{ asset('img/star.png') }}">
-        <p class="txt_catalogo">{{ $message->movieScore }}</p>
+        <p class="txt_catalogo">{{ $movieObject->movieScore }}</p>
         
         {{-- Here it also should call info from the database --}}
     </div>
-    <h2 class="description_details"> {{ $message->movieDescription }}</h2>
+    <h2 class="description_details"> {{ $movieObject->movieDescription }}</h2>
     <h1 class="description_title_form">LEAVE YOUR THOUGHT</h1>
     
 
@@ -47,11 +53,11 @@
 
 </section>
 <h1 class="description_title_form">THOUGHTS</h1>
-@if ($message->titleMessage) >= 1)
+@if ($movieObject->titleMessage) >= 1)
 <section class="">
     <ul class="ul_comments">
-        <li>{{ $message->titleMessage }}</li>
-        <li>{{ $message->contentMessage }} </li>
+        <li>{{ $movieObject->titleMessage }}</li>
+        <li>{{ $movieObject->contentMessage }} </li>
     </ul>
     @else
         <h1 class="description_title_form text-info">I don't have any nice messages to show you yet ♥</h1>

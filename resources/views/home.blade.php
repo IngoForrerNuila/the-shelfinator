@@ -68,7 +68,7 @@
 
         {{-- PELICULAS --}}
         @foreach ($messages as $message)
-           <pre >{{var_dump($message)}}</pre>
+           {{-- <pre >{{var_dump($message)}}</pre> --}}
 
         <div class="catalogo">
             {{-- <img class="img_catalogo" src="{{ asset('img/movies/'.'$message->moviePic') }}"> --}}
