@@ -126,11 +126,11 @@ body {
 }
 .genre-comedy{
     @extend .genre-action;
-    background-color: $genreAdventureColor;
+    background-color: $genreComedyColor;
 }
 .genre-scifi{
     @extend .genre-action;
-    background-color: $genreAdventureColor;
+    background-color: $genreSciFiColor;
 }
 .sbutton{
     margin-top: 0.5rem;
