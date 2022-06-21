@@ -17,13 +17,9 @@ class MessageController extends Controller
 
     public function movieDetails($id)
     {
-
-
-        
-        // $messages = Message::get()->sortByDesc('id');
+                // $messages = Message::get()->sortByDesc('id');
 
         $message= Message ::find($id);
-
 
         // ESTO PUEDE SER PARA LA BARRA DE BUSQUEDA 
         // $message= Message ::where('genre', 'action')-> get();

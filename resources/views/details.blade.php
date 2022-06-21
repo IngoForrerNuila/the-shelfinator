@@ -11,8 +11,8 @@
 <section class="details_section">
     <h1 class="h1_details">{{ $movieObject->movieTitle }}</h1> <br>
 
-    {{-- THIS IS A TEST TO CHECK IF THE ID IS CORRECT AND WHY DOESNT BRING THE PROPER INFO FROM THE URL ID  --}}
-    <h1 class="h1_details">{{ $movieObject->id }}</h1>
+    {{-- THIS IS A TEST TO CHECK IF THE ID IS CORRECT AND WHY DOESNT BRING THE PROPER INFO FROM THE URL ID --}}
+
 
 
     {{-- <img class="img_details" src="{{ asset('img/robocop2.jpg') }}"> --}}
@@ -22,19 +22,20 @@
         <p class="genre-{{ $movieObject->movieGenre }}">{{ $movieObject->movieGenre }}</p>
         <img class="star" src="{{ asset('img/star.png') }}">
         <p class="txt_catalogo">{{ $movieObject->movieScore }}</p>
-        
+
         {{-- Here it also should call info from the database --}}
     </div>
     <h2 class="description_details"> {{ $movieObject->movieDescription }}</h2>
     <h1 class="description_title_form">LEAVE YOUR THOUGHT</h1>
-    
 
-    
+
+
     <form action="" method="post">
         @csrf
         <div class="form-group">
             <label for="exampleFormControlInput1" class="text-white">Name | A.K.A</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" name="titleMessage" placeholder="Please enter your name">
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="titleMessage"
+                placeholder="Please enter your name">
         </div>
 
         <div class="form-group">
@@ -44,8 +45,8 @@
         </div>
 
         @error('title')
-                <h1 class="asign-danger">Please fill both title and content</h1>
-            @enderror
+            <h1 class="asign-danger">Please fill both title and content</h1>
+        @enderror
 
         <button type="submit" class="btn btn-warning sbutton">Submit</button>
     </form>
@@ -53,14 +54,14 @@
 
 </section>
 <h1 class="description_title_form">THOUGHTS</h1>
-@if ($movieObject->titleMessage) >= 1)
-<section class="">
-    <ul class="ul_comments">
-        <li>{{ $movieObject->titleMessage }}</li>
-        <li>{{ $movieObject->contentMessage }} </li>
-    </ul>
+@if ($movieObject->titleMessage)
+    >= 1)
+    <section class="">
+        <ul class="ul_comments">
+            <li>{{ $movieObject->titleMessage }}</li>
+            <li>{{ $movieObject->contentMessage }} </li>
+        </ul>
     @else
         <h1 class="description_title_form text-info">I don't have any nice messages to show you yet ♥</h1>
-       
-    @endif
+@endif
 </section>
