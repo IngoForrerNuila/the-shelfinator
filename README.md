@@ -1,12 +1,12 @@
-![Image preview](https://raw.githubusercontent.com/julianpetrini/the-shelfinator/master/public/img/Github_img/preview.png?token=GHSAT0AAAAAABUFLOHZ74PGRG6Z24J7TXUCYVRSV7A)
+![Image preview](https://raw.githubusercontent.com/julianpetrini/the-shelfinator/master/public/img/Github_img/preview.png?token=GHSAT0AAAAAABUFLOHYS2SYAN66YZIMYUOSYVRYAVQ)
 
 ## First Steps mockup and sitemap
 
-![Image preview](https://raw.githubusercontent.com/julianpetrini/the-shelfinator/master/public/img/Github_img/Figma_Steps1.png?token=GHSAT0AAAAAABUFLOHYPVC5567LDIBT2YY4YVRSYCA)
+![Image preview](https://raw.githubusercontent.com/julianpetrini/the-shelfinator/master/public/img/Github_img/Figma_Steps1.png?token=GHSAT0AAAAAABUFLOHZKUE7WOHRAU5TTQL2YVRYBEQ)
 
 ## Transform ideas into Figma 
 
-![Image preview](https://raw.githubusercontent.com/julianpetrini/the-shelfinator/master/public/img/Github_img/Figma%20Steps2.png?token=GHSAT0AAAAAABUFLOHYIUTFMMPOIORLTE7QYVRSYTQ)
+![Image preview](https://raw.githubusercontent.com/julianpetrini/the-shelfinator/master/public/img/Github_img/Figma%20Steps2.png?token=GHSAT0AAAAAABUFLOHY2KWLGWDOQJSWM4IWYVRYB3Q)
 
 ## OUR JOURNEY TOGETHER
 
